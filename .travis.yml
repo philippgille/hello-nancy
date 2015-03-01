@@ -1,6 +1,6 @@
 # for Travis CI
 language: csharp
-solution: Hello Nancy.sln
+solution: Hello\ Nancy.sln
 
 # for Coverity Scan
 env:
