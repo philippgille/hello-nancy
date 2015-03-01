@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/philippgille/hello-nancy.png?label=ready&title=Ready)](https://waffle.io/philippgille/hello-nancy)
 Hello Nancy
 ========
 
