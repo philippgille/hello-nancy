@@ -1,2 +1,21 @@
+# for Travis CI
 language: csharp
 solution: Hello Nancy.sln.sln
+
+# for Coverity Scan
+env:
+  global:
+   # The next declaration is the encrypted COVERITY_SCAN_TOKEN, created
+   #   via the "travis encrypt" command using the project repo's public key
+   - secure: "KXQNWCJmQ2YSx+Agwi9zUWy7c2PcGEAM9AQiBdwZKCwlUT3myB/R8Fb1AV5LTc2FdOgE8f60sjGn3s7j0UtRjlAJVKkk3YAif7FC6VY3yiCGHU/7M9gFj+nWDj9musEgCyvv3MOrRt6S424H0UyhV598M8kPX/RcfSHKXevP2rM="
+
+# for Coverity Scan
+addons:
+  coverity_scan:
+    project:
+      name: "philippgille/hello-nancy"
+      description: "Build submitted via Travis CI"
+    notification_email: philipp.gille@gmail.com
+    build_command_prepend: "msbuild /t:Clean"
+    build_command:   "msbuild /t:Rebuild"
+    branch_pattern: coverity_scan
