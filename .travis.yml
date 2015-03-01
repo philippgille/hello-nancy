@@ -1,4 +1,4 @@
-# for Travis CI
+# For Travis CI
 language: csharp
 solution: Hello\ Nancy.sln
 
@@ -7,20 +7,21 @@ branches:
   only:
     - ci
 
-# for Coverity Scan
+# For Coverity Scan
 env:
   global:
    # The next declaration is the encrypted COVERITY_SCAN_TOKEN, created
    #   via the "travis encrypt" command using the project repo's public key
-   - secure: "fFsyGxDNKXs80bVvWTttq4qYSSf6hXfDkLxAhM5Oz0EqIIjnvb7JI72yp8U/fUzVpnn7hQxAFEdR/kw40VRIpItLKIj+keAj9/lmqTNRhdyakKKx5ud1eV2b1ZHmQhSWMq/YLXECcVR9JeeVikVBDzx07QqjXQKlpPv3Dh0nepo="
+   - secure: "Q30e8od/WA9nC6W+bG2vqUnev6qj7kT6vLHIGBIkd54qbEC6vS9JcFOIslkG+hEhQyQRo2N1w3xXNZEuYR0W2j1N2tY2fHNDuBbX49XZks50Z12qwdPh+unEuCixm2d/l+jvZ3sgzLxncEGRkHNXLZjHOnmnQ05vEfR7ATGa7Kc="
 
-# for Coverity Scan
+# For Coverity Scan
+# Note: Travis-CI sais that msbuild wasn't found when executing the Coverity Scan. -> Replaced by xbuild
 addons:
   coverity_scan:
     project:
       name: "philippgille/hello-nancy"
       description: "Build submitted via Travis CI"
     notification_email: ci@example.com
-    build_command_prepend: "msbuild /t:Clean"
-    build_command:   "msbuild /t:Rebuild"
+    build_command_prepend: "xbuild /t:Clean"
+    build_command:  "xbuild /t:Rebuild"
     branch_pattern: ci
