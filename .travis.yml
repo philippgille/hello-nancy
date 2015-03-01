@@ -15,7 +15,6 @@ addons:
     project:
       name: "philippgille/hello-nancy"
       description: "Build submitted via Travis CI"
-    notification_email: philipp.gille@gmail.com
     build_command_prepend: "msbuild /t:Clean"
     build_command:   "msbuild /t:Rebuild"
     branch_pattern: coverity_scan
