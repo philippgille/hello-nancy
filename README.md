@@ -1,4 +1,6 @@
 [![Stories in Ready](https://badge.waffle.io/philippgille/hello-nancy.png?label=ready&title=Ready)](https://waffle.io/philippgille/hello-nancy)
+[![Coverity Scan Build Status](https://scan.coverity.com/projects/4413/badge.svg)](https://scan.coverity.com/projects/4413)
+
 Hello Nancy
 ========
 
