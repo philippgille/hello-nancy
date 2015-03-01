@@ -20,6 +20,7 @@ addons:
     project:
       name: "philippgille/hello-nancy"
       description: "Build submitted via Travis CI"
+    notification_email: ci@example.com
     build_command_prepend: "msbuild /t:Clean"
     build_command:   "msbuild /t:Rebuild"
     branch_pattern: ci
