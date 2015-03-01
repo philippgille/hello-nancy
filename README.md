@@ -1,5 +1,8 @@
-[![Stories in Ready](https://badge.waffle.io/philippgille/hello-nancy.png?label=ready&title=Ready)](https://waffle.io/philippgille/hello-nancy)
+[![Build status](https://ci.appveyor.com/api/projects/status/sjbx6mxag11hsilu?svg=true)](https://ci.appveyor.com/project/philippgille/hello-nancy)
+[![Build Status](https://travis-ci.org/philippgille/hello-nancy.svg)](https://travis-ci.org/philippgille/hello-nancy)
 [![Coverity Scan Build Status](https://scan.coverity.com/projects/4413/badge.svg)](https://scan.coverity.com/projects/4413)
+[![Coverage Status](https://coveralls.io/repos/philippgille/hello-nancy/badge.svg)](https://coveralls.io/r/philippgille/hello-nancy)
+[![Stories in Ready](https://badge.waffle.io/philippgille/hello-nancy.png?label=ready&title=Ready)](https://waffle.io/philippgille/hello-nancy)
 
 Hello Nancy
 ========
